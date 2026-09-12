@@ -27,6 +27,7 @@ interface PackageManifest {
   version: string;
   identifier: string;
   engines: { teamspeak: number };
+  repository: { url: string; type: string };
   image: string;
   license: string;
   author: {
@@ -50,12 +51,16 @@ function buildPackageJson(
     version: VERSION,
     identifier,
     engines: { teamspeak: 1 },
+    repository: {
+      url: "https://github.com/WardPearce/ts6-catppuccin",
+      type: "git",
+    },
     image,
     license: "MIT",
     author: {
-      name: "Catppuccin",
-      url: "https://catppuccin.com",
-      userTag: "catppuccin@myteamspeak.com",
+      name: "WardPearce",
+      url: "https://wardpearce.com",
+      userTag: "wardpearce@pm.me",
     },
     content: { themes },
   };

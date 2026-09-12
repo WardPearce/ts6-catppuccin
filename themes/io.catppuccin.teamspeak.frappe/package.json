@@ -6,6 +6,10 @@
   "engines": {
     "teamspeak": 1
   },
+  "repository": {
+    "url": "https://github.com/WardPearce/ts6-catppuccin",
+    "type": "git"
+  },
   "image": "frappe.png",
   "license": "MIT",
   "author": {
