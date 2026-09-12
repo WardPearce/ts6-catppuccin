@@ -2,6 +2,14 @@ Soothing pastel themes for TeamSpeak 5/6.
 
 A [Catppuccin](https://catppuccin.com) port for TeamSpeak.
 
+## Previews
+
+| Latte | Frappé |
+| ----- | ------ |
+| ![Latte](previews/latte.png) | ![Frappé](previews/frapp.png) |
+| **Macchiato** | **Mocha** |
+| ![Macchiato](previews/macchiato.png) | ![Mocha](previews/mocha.png) |
+
 ## Flavors
 
 For each of the four Catppuccin flavors (`latte`, `frappe`, `macchiato`, `mocha`)
@@ -22,9 +30,10 @@ Accent variants: `rosewater`, `flamingo`, `pink`, `mauve`, `red`, `maroon`,
 
 1. Download the flavor folder of your choice from `themes/` (e.g.
    `io.catppuccin.teamspeak.mocha`).
-2. In TeamSpeak 5/6, open **Settings → Add-ons → Install from file** and select
-   the `.teamspeak-theme` package, or place the folder into your addon directory.
-3. Pick the theme (and accent) in the appearance settings.
+2. Place the folder into your TeamSpeak addon directory (e.g.
+   `~/.ts3client/addons/` on Linux, `%APPDATA%/TS3Client/plugins/` on Windows).
+3. Pick the theme (and accent) in the appearance settings. See the
+   [previews](#previews) above to choose the flavor you like.
 
 ## Building
 
