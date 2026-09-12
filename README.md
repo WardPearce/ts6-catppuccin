@@ -16,12 +16,12 @@ For each of the four Catppuccin flavors (`latte`, `frappe`, `macchiato`, `mocha`
 there is a base theme using the `blue` accent plus a variant for each of the
 fourteen accents:
 
-| Identifier                          | Flavor           |
-| ----------------------------------- | ---------------- |
-| `io.catppuccin.teamspeak.latte`     | Latte (light)    |
-| `io.catppuccin.teamspeak.frappe`    | Frappé (dark)    |
-| `io.catppuccin.teamspeak.macchiato` | Macchiato (dark) |
-| `io.catppuccin.teamspeak.mocha`     | Mocha (dark)     |
+| Identifier                          | Flavor    |
+| ----------------------------------- | --------- |
+| `io.catppuccin.teamspeak.latte`     | Latte     |
+| `io.catppuccin.teamspeak.frappe`    | Frappé    |
+| `io.catppuccin.teamspeak.macchiato` | Macchiato |
+| `io.catppuccin.teamspeak.mocha`     | Mocha     |
 
 Accent variants: `rosewater`, `flamingo`, `pink`, `mauve`, `red`, `maroon`,
 `peach`, `yellow`, `green`, `teal`, `sky`, `sapphire`, `blue`, `lavender`.
