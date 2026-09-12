@@ -1,0 +1,12 @@
+/* Catppuccin Mocha - Pink accent - a soothing pastel theme for TeamSpeak 5/6.
+Do not edit by hand. */
+@import url(mocha.css);
+:root, ::after, ::before {
+    /*  ==========================================================================
+   1. Core Variables (--teamspeak-*)
+   ==========================================================================  */
+    --teamspeak-blue: #f5c2e7;
+    --teamspeak-blue-hover: #c49bb9;
+    --teamspeak-blue-transparent: rgba(245, 194, 231, 0.3);
+    --teamspeak-blue-transparent-light: rgba(245, 194, 231, 0.1)
+}

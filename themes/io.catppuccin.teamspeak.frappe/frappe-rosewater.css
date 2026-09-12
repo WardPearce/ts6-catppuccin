@@ -1,0 +1,12 @@
+/* Catppuccin Frappé - Rosewater accent - a soothing pastel theme for TeamSpeak 5/6.
+Do not edit by hand. */
+@import url(frappe.css);
+:root, ::after, ::before {
+    /*  ==========================================================================
+   1. Core Variables (--teamspeak-*)
+   ==========================================================================  */
+    --teamspeak-blue: #f2d5cf;
+    --teamspeak-blue-hover: #c2aaa6;
+    --teamspeak-blue-transparent: rgba(242, 213, 207, 0.3);
+    --teamspeak-blue-transparent-light: rgba(242, 213, 207, 0.1)
+}

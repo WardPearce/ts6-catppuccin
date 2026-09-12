@@ -1,0 +1,110 @@
+{
+  "name": "Catppuccin Mocha",
+  "description": "Soothing pastel Mocha theme for TeamSpeak 5/6.",
+  "version": "1.0.0",
+  "identifier": "io.catppuccin.teamspeak.mocha",
+  "engines": {
+    "teamspeak": 1
+  },
+  "image": "mocha.png",
+  "license": "MIT",
+  "author": {
+    "name": "Catppuccin",
+    "url": "https://catppuccin.com",
+    "userTag": "catppuccin@myteamspeak.com"
+  },
+  "content": {
+    "themes": [
+      {
+        "name": "Catppuccin Mocha",
+        "source": "mocha.css",
+        "image": "mocha.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Mocha Rosewater",
+        "source": "mocha-rosewater.css",
+        "image": "mocha-rosewater.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Mocha Flamingo",
+        "source": "mocha-flamingo.css",
+        "image": "mocha-flamingo.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Mocha Pink",
+        "source": "mocha-pink.css",
+        "image": "mocha-pink.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Mocha Mauve",
+        "source": "mocha-mauve.css",
+        "image": "mocha-mauve.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Mocha Red",
+        "source": "mocha-red.css",
+        "image": "mocha-red.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Mocha Maroon",
+        "source": "mocha-maroon.css",
+        "image": "mocha-maroon.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Mocha Peach",
+        "source": "mocha-peach.css",
+        "image": "mocha-peach.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Mocha Yellow",
+        "source": "mocha-yellow.css",
+        "image": "mocha-yellow.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Mocha Green",
+        "source": "mocha-green.css",
+        "image": "mocha-green.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Mocha Teal",
+        "source": "mocha-teal.css",
+        "image": "mocha-teal.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Mocha Sky",
+        "source": "mocha-sky.css",
+        "image": "mocha-sky.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Mocha Sapphire",
+        "source": "mocha-sapphire.css",
+        "image": "mocha-sapphire.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Mocha Blue",
+        "source": "mocha-blue.css",
+        "image": "mocha-blue.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Mocha Lavender",
+        "source": "mocha-lavender.css",
+        "image": "mocha-lavender.png",
+        "apiVersion": 1
+      }
+    ]
+  }
+}

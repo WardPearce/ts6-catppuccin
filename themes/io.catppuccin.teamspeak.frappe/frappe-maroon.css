@@ -1,0 +1,12 @@
+/* Catppuccin Frappé - Maroon accent - a soothing pastel theme for TeamSpeak 5/6.
+Do not edit by hand. */
+@import url(frappe.css);
+:root, ::after, ::before {
+    /*  ==========================================================================
+   1. Core Variables (--teamspeak-*)
+   ==========================================================================  */
+    --teamspeak-blue: #ea999c;
+    --teamspeak-blue-hover: #bb7a7d;
+    --teamspeak-blue-transparent: rgba(234, 153, 156, 0.3);
+    --teamspeak-blue-transparent-light: rgba(234, 153, 156, 0.1)
+}

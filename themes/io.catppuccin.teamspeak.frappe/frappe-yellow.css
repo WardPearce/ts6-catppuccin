@@ -1,0 +1,12 @@
+/* Catppuccin Frappé - Yellow accent - a soothing pastel theme for TeamSpeak 5/6.
+Do not edit by hand. */
+@import url(frappe.css);
+:root, ::after, ::before {
+    /*  ==========================================================================
+   1. Core Variables (--teamspeak-*)
+   ==========================================================================  */
+    --teamspeak-blue: #e5c890;
+    --teamspeak-blue-hover: #b7a073;
+    --teamspeak-blue-transparent: rgba(229, 200, 144, 0.3);
+    --teamspeak-blue-transparent-light: rgba(229, 200, 144, 0.1)
+}

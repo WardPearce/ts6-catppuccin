@@ -1,0 +1,12 @@
+/* Catppuccin Frappé - Pink accent - a soothing pastel theme for TeamSpeak 5/6.
+Do not edit by hand. */
+@import url(frappe.css);
+:root, ::after, ::before {
+    /*  ==========================================================================
+   1. Core Variables (--teamspeak-*)
+   ==========================================================================  */
+    --teamspeak-blue: #f4b8e4;
+    --teamspeak-blue-hover: #c393b6;
+    --teamspeak-blue-transparent: rgba(244, 184, 228, 0.3);
+    --teamspeak-blue-transparent-light: rgba(244, 184, 228, 0.1)
+}

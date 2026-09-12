@@ -1,0 +1,12 @@
+/* Catppuccin Macchiato - Maroon accent - a soothing pastel theme for TeamSpeak 5/6.
+Do not edit by hand. */
+@import url(macchiato.css);
+:root, ::after, ::before {
+    /*  ==========================================================================
+   1. Core Variables (--teamspeak-*)
+   ==========================================================================  */
+    --teamspeak-blue: #ee99a0;
+    --teamspeak-blue-hover: #be7a80;
+    --teamspeak-blue-transparent: rgba(238, 153, 160, 0.3);
+    --teamspeak-blue-transparent-light: rgba(238, 153, 160, 0.1)
+}

@@ -1,0 +1,12 @@
+/* Catppuccin Latte - Green accent - a soothing pastel theme for TeamSpeak 5/6.
+Do not edit by hand. */
+@import url(latte.css);
+:root, ::after, ::before {
+    /*  ==========================================================================
+   1. Core Variables (--teamspeak-*)
+   ==========================================================================  */
+    --teamspeak-blue: #40a02b;
+    --teamspeak-blue-hover: #338022;
+    --teamspeak-blue-transparent: rgba(64, 160, 43, 0.3);
+    --teamspeak-blue-transparent-light: rgba(64, 160, 43, 0.1)
+}

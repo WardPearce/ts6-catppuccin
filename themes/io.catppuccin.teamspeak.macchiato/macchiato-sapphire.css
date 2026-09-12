@@ -1,0 +1,12 @@
+/* Catppuccin Macchiato - Sapphire accent - a soothing pastel theme for TeamSpeak 5/6.
+Do not edit by hand. */
+@import url(macchiato.css);
+:root, ::after, ::before {
+    /*  ==========================================================================
+   1. Core Variables (--teamspeak-*)
+   ==========================================================================  */
+    --teamspeak-blue: #7dc4e4;
+    --teamspeak-blue-hover: #649db6;
+    --teamspeak-blue-transparent: rgba(125, 196, 228, 0.3);
+    --teamspeak-blue-transparent-light: rgba(125, 196, 228, 0.1)
+}

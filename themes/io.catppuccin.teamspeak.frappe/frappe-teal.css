@@ -1,0 +1,12 @@
+/* Catppuccin Frappé - Teal accent - a soothing pastel theme for TeamSpeak 5/6.
+Do not edit by hand. */
+@import url(frappe.css);
+:root, ::after, ::before {
+    /*  ==========================================================================
+   1. Core Variables (--teamspeak-*)
+   ==========================================================================  */
+    --teamspeak-blue: #81c8be;
+    --teamspeak-blue-hover: #67a098;
+    --teamspeak-blue-transparent: rgba(129, 200, 190, 0.3);
+    --teamspeak-blue-transparent-light: rgba(129, 200, 190, 0.1)
+}

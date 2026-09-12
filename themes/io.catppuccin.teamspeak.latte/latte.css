@@ -1,0 +1,670 @@
+/* Catppuccin Latte - a soothing pastel theme for TeamSpeak 5/6.
+Do not edit by hand. */
+:root, ::after, ::before {
+    /*  ==========================================================================
+   1. Core Variables (--teamspeak-*)
+   ==========================================================================  */
+    --teamspeak-blue: #1e66f5;
+    --teamspeak-blue-hover: #1852c4;
+    --teamspeak-blue-transparent: rgba(30, 102, 245, 0.3);
+    --teamspeak-blue-transparent-light: rgba(30, 102, 245, 0.1);
+    --teamspeak-dark-bg-primary: #eff1f5;
+    --teamspeak-dark-bg-secondary: #e6e9ef;
+    --teamspeak-dark-bg-tertiary: #dce0e8;
+    --teamspeak-dark-bg-modifier-hover: rgba(0, 0, 0, 0.04);
+    --teamspeak-dark-bg-modifier-active: rgba(0, 0, 0, 0.06);
+    --teamspeak-dark-bg-modifier-selected: rgba(0, 0, 0, 0.08);
+    --teamspeak-text-primary: #4c4f69;
+    --teamspeak-text-secondary: #5c5f77;
+    --teamspeak-text-muted: #6c6f85;
+    --teamspeak-text-link: var(--teamspeak-blue);
+    --teamspeak-header-primary: #4c4f69;
+    --teamspeak-header-secondary: #5c5f77;
+    --teamspeak-interactive-normal: #5c5f77;
+    --teamspeak-interactive-hover: #4c4f69;
+    --teamspeak-interactive-active: #4c4f69;
+    --teamspeak-interactive-muted: #bcc0cc;
+    --teamspeak-mention-bg: rgba(223, 142, 29, 0.12);
+    --teamspeak-mention-self-bg: var(--teamspeak-blue-transparent);
+    --teamspeak-scrollbar-thumb: var(--teamspeak-dark-bg-tertiary);
+    --teamspeak-scrollbar-track: #bcc0cc;
+    --teamspeak-border-color: #bcc0cc;
+    /*  ==========================================================================
+   2. TeamSpeak Variable Mapping (--tsv-* / --ts-*)
+   ==========================================================================  */
+    --tsv-tint: var(--teamspeak-blue) !important;
+    --tsv-tint2: var(--teamspeak-blue) !important;
+    --tsv-bg: var(--teamspeak-dark-bg-primary) !important;
+    --tsv-shaded-bg: var(--teamspeak-dark-bg-secondary) !important;
+    --tsv-contrast-bg: var(--teamspeak-dark-bg-tertiary) !important;
+    --tsv-contrast-strong-bg: var(--teamspeak-dark-bg-tertiary) !important;
+    --ts-context-menu-background: var(--teamspeak-dark-bg-tertiary) !important;
+    --tsv-chat-widget-bg: var(--teamspeak-dark-bg-secondary) !important;
+    --tsv-deviant-bg: var(--teamspeak-dark-bg-secondary) !important;
+    --card-background: var(--teamspeak-dark-bg-secondary) !important;
+    --tsv-preview-bg: var(--teamspeak-dark-bg-tertiary) !important;
+    --strong-bg: var(--teamspeak-dark-bg-secondary) !important;
+    --ts-tree-badges-bg: var(--teamspeak-dark-bg-tertiary) !important;
+    --ts-new-header-bg: var(--teamspeak-dark-bg-tertiary) !important;
+    --tsv-header-bg: var(--teamspeak-dark-bg-secondary) !important;
+    --tsv-view-header-bg: var(--teamspeak-dark-bg-secondary) !important;
+    --tsv-view-header-gradient-start: var(--teamspeak-dark-bg-secondary) !important;
+    --tsv-server-header-gradient-start: var(--teamspeak-dark-bg-secondary) !important;
+    --tsv-server-header-gradient-end: var(--teamspeak-dark-bg-secondary) !important;
+    --tsv-servertree-bg-gradient: var(--teamspeak-dark-bg-primary) !important;
+    --tsv-chat-remote-bg: transparent !important;
+    --tsv-chat-self-bg: transparent !important;
+    --tsv-chat-deleted-bg: transparent !important;
+    --tsv-chat-deleted-font-color: #d20f39 !important;
+    --tsv-chat-link-color: var(--teamspeak-text-link) !important;
+    --tsv-chat-remote-font-color: var(--teamspeak-text-primary) !important;
+    --tsv-chat-self-font-color: var(--teamspeak-text-primary) !important;
+    --ts-chat-system-message-bg: transparent !important;
+    --ts-chat-system-highlight-text-color: var(--teamspeak-blue) !important;
+    --ts-chat-system-message-color: var(--teamspeak-text-muted) !important;
+    --tsv-button-filled-bg: var(--teamspeak-blue) !important;
+    --tsv-button-filled-hover-bg: var(--teamspeak-blue-hover) !important;
+    --tsv-font-color: var(--teamspeak-text-primary) !important;
+    --tsv-font-subtitle-color: var(--teamspeak-text-secondary) !important;
+    --ts-third-font-color: var(--teamspeak-header-primary) !important;
+    --tsv-separation-border: 1px solid var(--teamspeak-border-color) !important;
+    --horizontal-separator-color: var(--teamspeak-border-color) !important;
+    --card-outline: var(--teamspeak-blue) !important;
+    --ts-menu-action-color: var(--teamspeak-blue) !important;
+    --tsv-context-menu-item-selection: rgba(0, 0, 0, 0.05) !important;
+    --ts-select-arrow-color: var(--teamspeak-interactive-normal) !important;
+    --tsv-slider-track-bg: var(--teamspeak-dark-bg-tertiary) !important;
+    --custom-color-slider1: var(--teamspeak-blue) !important;
+    --custom-color-slider2: var(--teamspeak-interactive-muted) !important;
+    --tsv-scrollbar-bg: var(--teamspeak-scrollbar-thumb) !important;
+    --tsv-scrollbar-chunks--bg-1: var(--teamspeak-scrollbar-track) !important;
+    --tsv-scrollbar-chunks--bg-2: transparent !important;
+    --custom-value-scrollbar-width: 6px;
+    --tsv-client-silent--gradient-start: transparent !important;
+    --tsv-client-silent--gradient-stop: transparent !important;
+    --tsv-client-talking--gradient-start: var(--teamspeak-blue) !important;
+    --tsv-client-talking--gradient-stop: var(--teamspeak-blue) !important
+}
+/*  ==========================================================================
+   3. Specific Element Styling Overrides
+   ==========================================================================  */
+.ts-input-wrapper {
+    background-color: var(--teamspeak-dark-bg-tertiary) !important;
+    border: 1px solid var(--teamspeak-border-color) !important;
+    border-radius: 3px !important;
+    padding: 6px 8px !important;
+    display: flex;
+    align-items: center
+}
+.ts-input-wrapper input, .ts-input-wrapper textarea {
+    background: transparent !important;
+    border: none !important;
+    color: var(--teamspeak-text-primary) !important;
+    width: 100% !important;
+    margin: 0 !important;
+    outline: none !important
+}
+.ts-input-wrapper:focus-within, .ts-input-wrapper.focus, .ts-input-wrapper:hover {
+    border-color: var(--teamspeak-blue) !important;
+    box-shadow: 0 0 0 1px var(--teamspeak-blue-transparent) !important
+}
+.tsv-search-bar {
+    background-color: var(--teamspeak-dark-bg-secondary) !important;
+    border-radius: var(--tsv-border-radius) !important;
+    border: 1px solid var(--teamspeak-border-color) !important;
+    padding: 4px 8px !important
+}
+.tsv-search-bar input {
+    background-color: transparent !important;
+    color: var(--teamspeak-text-primary) !important;
+    border: none !important
+}
+.tsv-search-bar:focus-within, .tsv-search-bar.focus, .tsv-search-bar:hover {
+    border-color: var(--teamspeak-blue) !important
+}
+.tsv-sidebar .tsv-search-bar {
+    border-radius: var(--tsv-border-radius) !important
+}
+.tsv-number-picker .tsv-number-picker-field input {
+    border-radius: var(--tsv-border-radius) !important
+}
+.tsv-button-filled, .tsv-button-gray, .tsv-tool-button.filled, .tsv-button.tsv-button-large, .tsv-tool-buttons {
+    border-radius: var(--tsv-border-radius) !important
+}
+.tsv-button.tsv-button-large:hover {
+    color: var(--teamspeak-text-primary) !important
+}
+.tsv-button-filled:hover, .tsv-button-hero:hover {
+    color: var(--teamspeak-text-primary) !important;
+    background: var(--tsv-button-filled-hover-bg) !important
+}
+.tsv-button-plain:hover {
+    transform: scale(1.15) !important;
+    transform-origin: 50% 50% !important;
+    transition: all .1s ease-out !important
+}
+.tsv-segmented-button svg path {
+    transform-origin: 50% 50%;
+    transition: transform 0.1s ease-out
+}
+.tsv-segmented-button:hover svg path {
+    transform: scale(1.15)
+}
+.tsv-button.tsv-button-left-aligned.tsv-button-tinted.tsv-button-has-image:hover
+.tsv-icon-stack svg path {
+    transform: scale(1.15);
+    transform-origin: 50% 50%;
+    transition: transform 0.1s ease-out
+}
+.ts-server-status-constructive-buttons .tsv-tool-button:not(:last-child) {
+    margin-right: 10px !important
+}
+.tsv-button-hero {
+    animation: none !important;
+    box-shadow: none !important
+}
+.ts-toggle.checked {
+    border: 1px solid var(--teamspeak-blue) !important
+}
+.ts-toggle-inner.checked:after {
+    background: var(--teamspeak-blue) !important
+}
+.ts-checkbox .ts-checkbox-inner .ts-checkbox-checkmark {
+    --tsv-icon-base: var(--teamspeak-blue) !important
+}
+.ts-slider-segment-value.ts-slider-segment-value-on {
+    background: var(--custom-color-slider1) !important
+}
+.ts-slider-segment-value.ts-slider-segment-value-off {
+    background: var(--custom-color-slider2) !important
+}
+.tsv-sidebar .tsv-body-background {
+    background: var(--teamspeak-dark-bg-tertiary) !important
+}
+.tsv-sidebar li:hover .tsv-icon .tsv-button svg path {
+    fill: var(--teamspeak-blue) !important;
+    transform: scale(1.15);
+    transform-origin: 50% 50%;
+    transition: all .1s ease-out
+}
+.tsv-sidebar li:hover .tsv-icon-server-global .tsv-icon-base-fill {
+    fill: var(--teamspeak-blue) !important;
+    transform: scale(1.15);
+    transform-origin: 50% 50%;
+    transition: all .1s ease-out
+}
+.tsv-sidebar .tsv-footer:not(.transparent) {
+    background: var(--teamspeak-dark-bg-tertiary) !important;
+    border-top: 2px solid var(--teamspeak-dark-bg-primary) !important
+}
+.tsv-footer::before {
+    content: "" !important;
+    display: block !important
+}
+div[data-v-40fac9df] .tsv-footer::before {
+    border-top: 2px solid var(--teamspeak-dark-bg-secondary) !important
+}
+.ts-server-tree-item-background-no-image {
+    background: transparent !important
+}
+.ts-server-tree-item-leaf.client.self {
+    color: var(--teamspeak-blue);
+    font-weight: 500
+}
+.ts-server-tree-item-groups span {
+    background: var(--teamspeak-dark-bg-secondary) !important
+}
+.ts-server-tree-inactive-status, .ts-server-tree-active-status {
+    background: var(--teamspeak-dark-bg-secondary) !important
+}
+.ts-chat-input-container {
+    border: 1px solid var(--teamspeak-dark-bg-tertiary) !important;
+    background-color: var(--teamspeak-dark-bg-tertiary) !important;
+    transition: border-color 0.2s ease-in-out !important;
+    margin-right: 18px !important
+}
+.ts-chat-input-container.focus,
+.ts-chat-input-container:hover {
+    border-color: var(--teamspeak-blue) !important;
+    background-color: var(--teamspeak-dark-bg-tertiary) !important
+}
+.ts-chat-input-container-content {
+    padding: 4px 8px !important
+}
+.ts-chat-room-event-detailed:not(.ts-currently-referencing, .apparently-people-like-huge-faces) .ts-chat-room-event-bubble {
+    padding: 0 12.5px 4px 4px !important;
+    box-shadow: none !important;
+    margin-bottom: 1px !important
+}
+.ts-chat-room-event-detailed:not(.ts-currently-referencing, .apparently-people-like-huge-faces) .ts-chat-room-event-bubble::before {
+    display: none !important
+}
+.ts-chat-room-event-detailed .ts-chat-room-event-bubble-container {
+    margin-left: 45px
+}
+.ts-chat-room-event-timestamp-container {
+    display: none !important
+}
+.ts-chat-room-event-bubble .ts-parsed-text-content a {
+    color: var(--teamspeak-text-link) !important
+}
+.ts-chat-message-system-body {
+    border-left: 2px solid var(--teamspeak-border-color) !important;
+    margin: 2px 0;
+    padding-left: 8px
+}
+.ts-chat-room-event-selected .ts-chat-message-system-body:before {
+    background: var(--teamspeak-blue) !important;
+    box-shadow: 0 0 0 1px var(--teamspeak-blue) !important
+}
+.tsv-view.tsv-activity .ts-chat-room-event-detailed.is-system .ts-chat-message-system-body,
+.ts-activity-slideover-container .ts-chat-room-event-detailed.is-system .ts-chat-message-system-body {
+    border-radius: var(--tsv-border-radius) !important;
+    border-color: transparent !important
+}
+.ts-chat-room-event-bubble.self-mention {
+    background: var(--teamspeak-mention-self-bg) !important;
+    color: var(--teamspeak-text-primary) !important;
+    border-left: 2px solid var(--teamspeak-blue) !important;
+    border-radius: 0 3px 3px 0 !important;
+    padding-left: 6px !important
+}
+.ts-chat-room-event-bubble.self-mention::before {
+    display: none !important
+}
+.ts-chat-room-event-bubble.mention {
+    background: var(--teamspeak-mention-bg) !important;
+    color: var(--teamspeak-text-primary) !important
+}
+.tsv-virtual-list-item:hover {
+    background-color: var(--teamspeak-dark-bg-primary) !important
+}
+.tsv-body .tsv-flex-column .tsv-virtual-list-container .tsv-virtual-list-item:hover {
+    background-color: var(--teamspeak-dark-bg-secondary) !important
+}
+.tsv-activities .tsv-virtual-list-item:hover,
+.tsv-item-group .tsv-virtual-list-item:hover,
+.tsv-resize-area-container .tsv-virtual-list-item:hover {
+    background-color: transparent !important
+}
+.tsv-virtual-list-item:has(.ts-chat-message-system-body):hover {
+    background-color: transparent !important
+}
+.tsv-view.tsv-activity .tsv-view.tsv-activity-detail
+  .tsv-body.tsv-flex-column.tsv-virtual-list-container
+  .tsv-virtual-list-item:hover {
+    background-color: var(--teamspeak-dark-bg-primary) !important
+}
+.ts-notifications-center {
+    background: var(--teamspeak-dark-bg-primary) !important
+}
+.ts-emoji-picker-emoji:hover,
+.ts-emoji-picker-anchor:hover,
+.ts-chat-input-tabs:hover {
+    cursor: pointer
+}
+.ts-emoji-scroll-container .tsv-virtual-list::-webkit-scrollbar-track {
+    background: transparent !important
+}
+.tsv-settings-categories.not-in-sidebar .tsv-item.tsv-selected>.tsv-item-highlight {
+    background-color: var(--teamspeak-dark-bg-secondary) !important
+}
+.ts-discovery-card:hover {
+    --card-background: var(--teamspeak-dark-bg-primary) !important
+}
+.ts-currently-referencing .ts-chat-room-event-bubble {
+    background: var(--teamspeak-dark-bg-modifier-selected) !important;
+    color: var(--teamspeak-text-primary) !important;
+    border-left: 2px solid var(--teamspeak-text-link) !important;
+    border-radius: 0 3px 3px 0 !important;
+    padding-left: 6px !important
+}
+.ts-currently-referencing .ts-chat-room-event-bubble::before {
+    display: none !important
+}
+.ts-currently-referencing .ts-chat-message-attachment-footer.ts-noselect > a,
+.ts-currently-referencing .ts-reply .ts-reply-icon {
+    color: var(--teamspeak-text-link) !important
+}
+.ts-rendered-message .ts-reply .ts-reply-icon {
+    --tsv-icon-base: var(--teamspeak-text-primary) !important
+}
+.ts-chat-message-attachment {
+    margin-left: 50px
+}
+.ts-chat-room-event-detailed .ts-chat-message-attachment-container.ts-timestamp-margin-left,
+.ts-chat-room-event-detailed .ts-timestamp-margin-left {
+    margin-left: 0px !important
+}
+.ts-chat-message-attachment-inner:has(.ts-attachment-youtube-wrapper) {
+    border-left: 3px solid #FF0000 !important
+}
+.ts-chat-message-attachment-inner {
+    background-color: var(--teamspeak-dark-bg-secondary) !important;
+    border: 1px solid var(--teamspeak-border-color) !important;
+    border-radius: 3px
+}
+.ts-chat-message-attachment .ts-chat-message-attachment-image,
+.ts-chat-message-attachment-myts-file.isImage {
+    height: unset !important
+}
+.ts-chat-room-event-selected .ts-chat-message-attachment-container .ts-chat-message-attachment-inner {
+    background: var(--teamspeak-dark-bg-modifier-selected) !important;
+    border-color: var(--teamspeak-blue) !important;
+    --room-event-highlight-border: var(--teamspeak-blue) !important;
+    --room-event-highlight-border2: var(--teamspeak-blue) !important;
+    --room-event-highlight-bg: var(--teamspeak-dark-bg-modifier-selected) !important;
+    --tsv-shaded-bg-selection: var(--teamspeak-dark-bg-modifier-selected) !important
+}
+.tsv-flex.tsv-flex-wrap.ts-reactions {
+    margin-left: 50px !important
+}
+.ts-parsed-text-content .spoiler:not([visible]) {
+    background-color: var(--teamspeak-dark-bg-tertiary) !important;
+    color: transparent !important;
+    border-radius: 3px
+}
+.ts-parsed-text-content .spoiler:not([visible]):hover {
+    background-color: rgba(32, 34, 37, 0.8) !important
+}
+.ts-chat-room-event-compact.ts-chat-room-event-selected .ts-chat-message-compact-container .actual:before,
+.ts-chat-room-event-selected:before {
+    box-shadow: none !important;
+    background: var(--teamspeak-blue) !important;
+    border: 1px solid var(--teamspeak-text-primary);
+    border-radius: 3px
+}
+.ts-chat-quick-actions::before {
+    border-radius: var(--tsv-border-radius) !important
+}
+.tsv-readability.ts-widget-container > *,
+.tsv-dashboard-servers__content,
+.tsv-dashboard-chats,
+.tsv-dashboard-news {
+    margin-bottom: 10px !important
+}
+.tsv-readability.ts-widget-container .ts-card.ts-widget.ts-widget-break.full.no-padding.tsv-client-banner,
+.tsv-readability.ts-widget-container .ts-card.ts-widget.ts-widget-break.full.tsv-client-info-groups-container.ts-client-info-status,
+.tsv-readability.ts-widget-container .ts-card.ts-widget.ts-widget-break.full.tsv-client-info-contact-management,
+.tsv-readability.ts-widget-container .ts-card.ts-widget.ts-widget-break.full.tsv-client-info-groups-container,
+.tsv-readability.ts-widget-container .ts-card.ts-widget.ts-transfer-quota-outer.ts-widget-break {
+    background: var(--teamspeak-dark-bg-primary) !important
+}
+.ts-discovery-wrapper {
+    background: var(--teamspeak-dark-bg-primary) !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important
+}
+::-webkit-scrollbar {
+    width: var(--custom-value-scrollbar-width) !important;
+    height: 6px !important
+}
+::-webkit-scrollbar-track {
+    background: var(--teamspeak-scrollbar-thumb) !important;
+    border-radius: 3px !important
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--teamspeak-scrollbar-track) !important;
+    border-radius: 3px !important
+}
+.ts-chunk-scroll-track__thumb {
+    background-color: var(--teamspeak-scrollbar-track) !important;
+    border-radius: 3px !important
+}
+.ts-dnd-drag-into:after {
+    background-color: var(--teamspeak-blue-transparent) !important;
+    border: 1px dashed var(--teamspeak-blue) !important
+}
+strong {
+    font-weight: 600 !important;
+    color: var(--teamspeak-text-primary) !important
+}
+.ts-server-events-list li.ts-event-cyan,
+.ts-server-logs-list li.ts-event-cyan {
+    border-left-color: var(--default-tsv-tint) !important
+}
+.ts-title-logo {
+    --tsv-icon-tint: var(--teamspeak-blue) !important
+}
+.ts-server-informative-buttons::before {
+    border-radius: var(--tsv-border-radius) !important
+}
+.ts-user-style-current .ts-user-style-name {
+    color: var(--tsv-tint)
+}
+.tsv-action {
+    cursor: pointer !important
+}
+.ts-account-badges-area {
+    cursor: pointer !important
+}
+.setup-stream__settings.wide-mode .tsv-segmented-button.active {
+    background-color: transparent !important;
+    box-shadow: none;
+    font-weight: bold;
+    transform: scale(1.15);
+    transform-origin: 50% 50%
+}
+.setup-stream__settings.wide-mode .tsv-segmented-button:hover {
+    transform: scale(1.15);
+    transform-origin: 50% 50%;
+    transition: all .1s ease-out
+}
+.tsv-view.tsv-activity-detail.tsv-activity-secondary .tsv-body.tsv-flex.tsv-body-background {
+    padding-right: 8px !important;
+    box-sizing: border-box !important
+}
+.tsv-segmented-control:not(.tsv-segmented-control-list) {
+    border-radius: var(--tsv-border-radius) !important
+}
+.ts-server-tree-item-leaf:hover .tsv-item-highlight,
+.ts-server-tree-item-leaf:hover .tsv-item-highlight-extra,
+.ts-server-tree-item-leaf.tsv-active .tsv-item-highlight,
+.ts-server-tree-item-leaf.tsv-active .tsv-item-highlight-extra,
+.ts-server-tree-item-leaf.tsv-selected .tsv-item-highlight,
+.ts-server-tree-item-leaf.tsv-selected .tsv-item-highlight-extra {
+    display: block !important;
+    background: var(--teamspeak-blue-transparent-light, rgba(50,150,255,0.3)) !important;
+    box-shadow: inset 0 0 0 0.5px var(--tsv-tint, #5095ff) !important;
+    border: 1px solid var(--tsv-tint) !important;
+    border-radius: var(--tsv-border-radius) !important
+}
+.ts-server-tree-item-leaf.channel:not(.spacer).is-full .tsv-item-highlight::after,
+.ts-server-tree-item-leaf.channel:not(.spacer).is-full .tsv-item-highlight-extra::after,
+.ts-server-tree-item-leaf.channel:not(.spacer).has-password .tsv-item-highlight::after,
+.ts-server-tree-item-leaf.channel:not(.spacer).has-password .tsv-item-highlight-extra::after {
+    border-radius: var(--tsv-border-radius) !important
+}
+.ts-server-tree-item-leaf .tsv-item-highlight,
+.ts-server-tree-item-leaf .tsv-item-highlight-extra,
+.ts-server-tree-item-leaf .ts-server-tree-item-background-image,
+.ts-server-tree-item-leaf .ts-server-tree-item-background-image-full,
+.ts-server-tree-item-leaf .ts-server-tree-item-background-no-image,
+.ts-server-tree-item-node .ts-expander,
+.ts-server-tree-item-node .ts-expander-spacing {
+    border-radius: var(--tsv-border-radius) !important
+}
+.ts-server-tree-item-node .ts-expander,
+.ts-server-tree-item-node .ts-expander-spacing {
+    background-color: var(--teamspeak-dark-bg-secondary) !important
+}
+.ts-server-tree-item-background-image img,
+.ts-server-tree-item-background-image-full img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100% !important;
+    height: auto !important
+}
+.ts-server-tree-item-background-image img,
+.ts-server-tree-item-background-image-full img,
+.ts-server-tree-item-background-no-image img {
+    -webkit-mask-image: none !important
+}
+.ts-server-tree-item-leaf.channel:hover .ts-server-tree-item-background-image__img,
+.ts-server-tree-item-leaf.channel.tsv-active .ts-server-tree-item-background-image__img {
+    margin-left: 0px !important
+}
+.ts-server-tree-item-leaf .ts-server-tree-item-text.banner {
+    text-shadow: 0 1px 3px var(--tsv-contrast-bg),
+    0 0 12px var(--tsv-contrast-bg),
+    0 0 8px var(--tsv-contrast-bg),
+    0 0 4px var(--tsv-contrast-bg)
+}
+.tsv-header .tsv-central-toolbar-buttons::before {
+    border-radius: var(--tsv-border-radius) !important
+}
+.ts-card,
+.ts-chat-input-container-content,
+.ts-chat-input-container,
+.tsv-view-background__img,
+.ts-server-tree-active-status,
+.ts-server-tree-inactive-status,
+.multiselect,
+.ts-server-tree-item-groups span,
+.tsv-table>.tsv-table-header>.tsv-table-header-entry:not(.no-border)::after,
+.ts-breadcrumbs,
+.ts-info-files-channel-inner .tsv-files-quickinfo,
+.tsv-settings-theme-picker .tsv-settings-theme-picker-item,
+.ts-appearance-settings .ts-collection-item,
+.tsv-view-banner .tsv-view-background,
+.tsv-server-info-grid .tsv-server-info-grid-item,
+.tsv-server-info-grid .tsv-server-info-grid-left,
+.tsv-detail-info-topic .tsv-server-info-topic-banner,
+.ts-widget-container > .ts-widget:not(.transparent),
+.ts-widget-wrapper,
+.tsv-dashboard-servers__content,
+.tsv-dashboard-chats,
+.tsv-dashboard-news,
+.tsv-dashboard-widget,
+.ts-discovery-card-border:after,
+.ts-discovery-card,
+.server-spotlight-space,
+.ts-discovery-card .ts-discovery-header,
+.ts-discovery-card--sticky,
+.tsv-dashboard-chats .server-hosting > .tsv-dashboard-widget .tsv-dashboard-widget-content,
+.ts-notification::before,
+.tsv-view-banner .tsv-view-background:after {
+    border-radius: var(--tsv-border-radius) !important
+}
+.ts-appearance-settings .ts-collection-container,
+.tsv-item-accessory {
+    cursor: pointer !important
+}
+.ts-context-menu li.tsv-item svg.tsv-icon .tsv-icon-base-stroke,
+.ts-context-menu li.tsv-item svg.tsv-icon .tsv-icon-base-fill {
+    transition: transform .1s ease-out, stroke .1s ease-out, fill .1s ease-out;
+    transform-origin: center
+}
+.ts-context-menu li.tsv-item:hover svg.tsv-icon:not(.tsv-icon-primary) .tsv-icon-base-stroke {
+    stroke: var(--tsv-tint) !important;
+    transform: scale(1.15)
+}
+.ts-context-menu li.tsv-item:hover svg.tsv-icon:not(.tsv-icon-primary) .tsv-icon-base-fill {
+    fill: var(--tsv-tint) !important;
+    transform: scale(1.15)
+}
+.tsv-settings-theme-picker-item.active {
+    --preview-bg: var(--teamspeak-dark-bg-tertiary) !important
+}
+.tsv-activity-main .tsv-header>.tsv-window-bar::after {
+    --radius: var(--main-content-top-corner-radius, var(--tsv-border-radius))
+}
+.tsv-button-filled.tsv-is-destructive:hover,
+.tsv-button-hero.tsv-is-destructive:hover {
+    background: var(--tsv-button-filled-destructive-hover-bg, #B71C1C) !important
+}
+.tsv-bar .tsv-item-content.tsv-item-content-primary {
+    display: grid !important;
+    grid-template-columns: auto 1fr !important;
+    grid-template-rows: auto auto !important;
+    grid-column-gap: var(--tsv-padding-h-small) !important;
+    grid-row-gap: 1px !important;
+    align-items: center !important;
+    flex-direction: initial !important;
+    flex-wrap: initial !important;
+    height: auto !important
+}
+.tsv-bar .tsv-item-content.tsv-item-content-primary > .tsv-icon {
+    grid-column: 1 / 2 !important;
+    grid-row: 1 / 3 !important;
+    align-self: center !important;
+    margin-right: 0 !important;
+    flex-shrink: 0 !important
+}
+.tsv-bar .tsv-item-content.tsv-item-content-primary > .tsv-item-text {
+    grid-column: 2 / 3 !important;
+    grid-row: 1 / 2 !important;
+    align-self: end !important;
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    flex-grow: 1 !important;
+    flex-shrink: 1 !important
+}
+.tsv-bar .tsv-item-content.tsv-item-content-primary > .tsv-item-text > .tsv-text-truncate {
+    display: block !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    width: 100% !important
+}
+.tsv-bar .tsv-item-content.tsv-item-content-primary > .tsv-item-text-detail {
+    grid-column: 2 / 3 !important;
+    grid-row: 2 / 3 !important;
+    align-self: start !important;
+    color: var(--tsv-font-subtitle-color) !important;
+    font-size: var(--tsv-font-size-minimal) !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    line-height: 1.2 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    flex-grow: 0 !important;
+    flex-shrink: 1 !important
+}
+.multiselect,
+.permission-item .tsv-item,
+.tsv-tool-menu,
+.ts-context-menu:before,
+.ts-context-menu {
+    border-radius: var(--tsv-border-radius) !important
+}
+.tsv-activity-secondary .tsv-bar .tsv-segmented-control {
+    background-color: var(--teamspeak-dark-bg-tertiary) !important
+}
+.multiselect__content-wrapper {
+    border-bottom-left-radius: var(--tsv-border-radius) !important;
+    border-bottom-right-radius: var(--tsv-border-radius) !important
+}
+.ts-slider-knob {
+    cursor: pointer !important
+}
+.ts-discovery-card.ts-discovery-card--sticky[data-v-0a9f8238] {
+    border-radius: var(--tsv-border-radius) !important;
+    background-color: var(--tsv-tint) !important;
+    background-image: radial-gradient(circle at 0% 0%, rgb(17, 56, 135) 0%, transparent 40%),
+        radial-gradient(circle at 100% 0%, rgb(23, 80, 191) 0%, transparent 40%),
+        radial-gradient(circle at 0% 100%, rgb(30, 102, 245) 0%, transparent 40%),
+        radial-gradient(circle at 100% 100%, rgb(109, 156, 249) 0%, transparent 40%) !important;
+    background-repeat: no-repeat !important
+}
+/*  ==========================================================================
+   4. Ad Removal
+   ==========================================================================  */
+.ts-join-community .tsv-button-filled,
+.ts-start-community-banner,
+.ts-start-community-banner + .ts-horizontal-separator {
+    display: none !important
+}
+/*  ==========================================================================
+   End of Catppuccin Theme CSS
+   ==========================================================================  */

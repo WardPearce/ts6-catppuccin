@@ -1,0 +1,12 @@
+/* Catppuccin Latte - Peach accent - a soothing pastel theme for TeamSpeak 5/6.
+Do not edit by hand. */
+@import url(latte.css);
+:root, ::after, ::before {
+    /*  ==========================================================================
+   1. Core Variables (--teamspeak-*)
+   ==========================================================================  */
+    --teamspeak-blue: #fe640b;
+    --teamspeak-blue-hover: #cb5009;
+    --teamspeak-blue-transparent: rgba(254, 100, 11, 0.3);
+    --teamspeak-blue-transparent-light: rgba(254, 100, 11, 0.1)
+}

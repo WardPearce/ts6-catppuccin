@@ -1,0 +1,110 @@
+{
+  "name": "Catppuccin Latte",
+  "description": "Soothing pastel Latte theme for TeamSpeak 5/6.",
+  "version": "1.0.0",
+  "identifier": "io.catppuccin.teamspeak.latte",
+  "engines": {
+    "teamspeak": 1
+  },
+  "image": "latte.png",
+  "license": "MIT",
+  "author": {
+    "name": "Catppuccin",
+    "url": "https://catppuccin.com",
+    "userTag": "catppuccin@myteamspeak.com"
+  },
+  "content": {
+    "themes": [
+      {
+        "name": "Catppuccin Latte",
+        "source": "latte.css",
+        "image": "latte.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Latte Rosewater",
+        "source": "latte-rosewater.css",
+        "image": "latte-rosewater.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Latte Flamingo",
+        "source": "latte-flamingo.css",
+        "image": "latte-flamingo.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Latte Pink",
+        "source": "latte-pink.css",
+        "image": "latte-pink.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Latte Mauve",
+        "source": "latte-mauve.css",
+        "image": "latte-mauve.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Latte Red",
+        "source": "latte-red.css",
+        "image": "latte-red.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Latte Maroon",
+        "source": "latte-maroon.css",
+        "image": "latte-maroon.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Latte Peach",
+        "source": "latte-peach.css",
+        "image": "latte-peach.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Latte Yellow",
+        "source": "latte-yellow.css",
+        "image": "latte-yellow.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Latte Green",
+        "source": "latte-green.css",
+        "image": "latte-green.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Latte Teal",
+        "source": "latte-teal.css",
+        "image": "latte-teal.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Latte Sky",
+        "source": "latte-sky.css",
+        "image": "latte-sky.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Latte Sapphire",
+        "source": "latte-sapphire.css",
+        "image": "latte-sapphire.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Latte Blue",
+        "source": "latte-blue.css",
+        "image": "latte-blue.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Latte Lavender",
+        "source": "latte-lavender.css",
+        "image": "latte-lavender.png",
+        "apiVersion": 1
+      }
+    ]
+  }
+}

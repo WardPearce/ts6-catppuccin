@@ -1,0 +1,12 @@
+/* Catppuccin Macchiato - Yellow accent - a soothing pastel theme for TeamSpeak 5/6.
+Do not edit by hand. */
+@import url(macchiato.css);
+:root, ::after, ::before {
+    /*  ==========================================================================
+   1. Core Variables (--teamspeak-*)
+   ==========================================================================  */
+    --teamspeak-blue: #eed49f;
+    --teamspeak-blue-hover: #beaa7f;
+    --teamspeak-blue-transparent: rgba(238, 212, 159, 0.3);
+    --teamspeak-blue-transparent-light: rgba(238, 212, 159, 0.1)
+}

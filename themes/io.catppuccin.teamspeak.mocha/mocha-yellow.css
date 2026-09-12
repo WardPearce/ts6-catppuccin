@@ -1,0 +1,12 @@
+/* Catppuccin Mocha - Yellow accent - a soothing pastel theme for TeamSpeak 5/6.
+Do not edit by hand. */
+@import url(mocha.css);
+:root, ::after, ::before {
+    /*  ==========================================================================
+   1. Core Variables (--teamspeak-*)
+   ==========================================================================  */
+    --teamspeak-blue: #f9e2af;
+    --teamspeak-blue-hover: #c7b58c;
+    --teamspeak-blue-transparent: rgba(249, 226, 175, 0.3);
+    --teamspeak-blue-transparent-light: rgba(249, 226, 175, 0.1)
+}

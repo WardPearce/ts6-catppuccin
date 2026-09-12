@@ -1,0 +1,12 @@
+/* Catppuccin Latte - Teal accent - a soothing pastel theme for TeamSpeak 5/6.
+Do not edit by hand. */
+@import url(latte.css);
+:root, ::after, ::before {
+    /*  ==========================================================================
+   1. Core Variables (--teamspeak-*)
+   ==========================================================================  */
+    --teamspeak-blue: #179299;
+    --teamspeak-blue-hover: #12757a;
+    --teamspeak-blue-transparent: rgba(23, 146, 153, 0.3);
+    --teamspeak-blue-transparent-light: rgba(23, 146, 153, 0.1)
+}

@@ -1,0 +1,12 @@
+/* Catppuccin Macchiato - Lavender accent - a soothing pastel theme for TeamSpeak 5/6.
+Do not edit by hand. */
+@import url(macchiato.css);
+:root, ::after, ::before {
+    /*  ==========================================================================
+   1. Core Variables (--teamspeak-*)
+   ==========================================================================  */
+    --teamspeak-blue: #b7bdf8;
+    --teamspeak-blue-hover: #9297c6;
+    --teamspeak-blue-transparent: rgba(183, 189, 248, 0.3);
+    --teamspeak-blue-transparent-light: rgba(183, 189, 248, 0.1)
+}

@@ -1,0 +1,110 @@
+{
+  "name": "Catppuccin Frapp",
+  "description": "Soothing pastel Frappé theme for TeamSpeak 5/6.",
+  "version": "1.0.0",
+  "identifier": "io.catppuccin.teamspeak.frappe",
+  "engines": {
+    "teamspeak": 1
+  },
+  "image": "frappe.png",
+  "license": "MIT",
+  "author": {
+    "name": "Catppuccin",
+    "url": "https://catppuccin.com",
+    "userTag": "catppuccin@myteamspeak.com"
+  },
+  "content": {
+    "themes": [
+      {
+        "name": "Catppuccin Frapp",
+        "source": "frappe.css",
+        "image": "frappe.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Frapp Rosewater",
+        "source": "frappe-rosewater.css",
+        "image": "frappe-rosewater.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Frapp Flamingo",
+        "source": "frappe-flamingo.css",
+        "image": "frappe-flamingo.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Frapp Pink",
+        "source": "frappe-pink.css",
+        "image": "frappe-pink.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Frapp Mauve",
+        "source": "frappe-mauve.css",
+        "image": "frappe-mauve.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Frapp Red",
+        "source": "frappe-red.css",
+        "image": "frappe-red.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Frapp Maroon",
+        "source": "frappe-maroon.css",
+        "image": "frappe-maroon.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Frapp Peach",
+        "source": "frappe-peach.css",
+        "image": "frappe-peach.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Frapp Yellow",
+        "source": "frappe-yellow.css",
+        "image": "frappe-yellow.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Frapp Green",
+        "source": "frappe-green.css",
+        "image": "frappe-green.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Frapp Teal",
+        "source": "frappe-teal.css",
+        "image": "frappe-teal.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Frapp Sky",
+        "source": "frappe-sky.css",
+        "image": "frappe-sky.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Frapp Sapphire",
+        "source": "frappe-sapphire.css",
+        "image": "frappe-sapphire.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Frapp Blue",
+        "source": "frappe-blue.css",
+        "image": "frappe-blue.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Frapp Lavender",
+        "source": "frappe-lavender.css",
+        "image": "frappe-lavender.png",
+        "apiVersion": 1
+      }
+    ]
+  }
+}

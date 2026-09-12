@@ -1,0 +1,12 @@
+/* Catppuccin Mocha - Peach accent - a soothing pastel theme for TeamSpeak 5/6.
+Do not edit by hand. */
+@import url(mocha.css);
+:root, ::after, ::before {
+    /*  ==========================================================================
+   1. Core Variables (--teamspeak-*)
+   ==========================================================================  */
+    --teamspeak-blue: #fab387;
+    --teamspeak-blue-hover: #c88f6c;
+    --teamspeak-blue-transparent: rgba(250, 179, 135, 0.3);
+    --teamspeak-blue-transparent-light: rgba(250, 179, 135, 0.1)
+}

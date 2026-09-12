@@ -1,0 +1,110 @@
+{
+  "name": "Catppuccin Macchiato",
+  "description": "Soothing pastel Macchiato theme for TeamSpeak 5/6.",
+  "version": "1.0.0",
+  "identifier": "io.catppuccin.teamspeak.macchiato",
+  "engines": {
+    "teamspeak": 1
+  },
+  "image": "macchiato.png",
+  "license": "MIT",
+  "author": {
+    "name": "Catppuccin",
+    "url": "https://catppuccin.com",
+    "userTag": "catppuccin@myteamspeak.com"
+  },
+  "content": {
+    "themes": [
+      {
+        "name": "Catppuccin Macchiato",
+        "source": "macchiato.css",
+        "image": "macchiato.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Macchiato Rosewater",
+        "source": "macchiato-rosewater.css",
+        "image": "macchiato-rosewater.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Macchiato Flamingo",
+        "source": "macchiato-flamingo.css",
+        "image": "macchiato-flamingo.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Macchiato Pink",
+        "source": "macchiato-pink.css",
+        "image": "macchiato-pink.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Macchiato Mauve",
+        "source": "macchiato-mauve.css",
+        "image": "macchiato-mauve.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Macchiato Red",
+        "source": "macchiato-red.css",
+        "image": "macchiato-red.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Macchiato Maroon",
+        "source": "macchiato-maroon.css",
+        "image": "macchiato-maroon.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Macchiato Peach",
+        "source": "macchiato-peach.css",
+        "image": "macchiato-peach.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Macchiato Yellow",
+        "source": "macchiato-yellow.css",
+        "image": "macchiato-yellow.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Macchiato Green",
+        "source": "macchiato-green.css",
+        "image": "macchiato-green.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Macchiato Teal",
+        "source": "macchiato-teal.css",
+        "image": "macchiato-teal.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Macchiato Sky",
+        "source": "macchiato-sky.css",
+        "image": "macchiato-sky.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Macchiato Sapphire",
+        "source": "macchiato-sapphire.css",
+        "image": "macchiato-sapphire.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Macchiato Blue",
+        "source": "macchiato-blue.css",
+        "image": "macchiato-blue.png",
+        "apiVersion": 1
+      },
+      {
+        "name": "Catppuccin Macchiato Lavender",
+        "source": "macchiato-lavender.css",
+        "image": "macchiato-lavender.png",
+        "apiVersion": 1
+      }
+    ]
+  }
+}
