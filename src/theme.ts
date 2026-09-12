@@ -920,6 +920,7 @@ function buildStaticNodes(
     decl("background-color", "var(--tsv-tint) !important"),
     decl("background-image", gradient + " !important"),
     decl("background-repeat", "no-repeat !important"),
+    decl("color", "var(--tsv-button-font-color) !important"),
   );
   nodes.push(sticky);
 

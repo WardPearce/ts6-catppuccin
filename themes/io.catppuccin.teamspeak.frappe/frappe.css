@@ -671,7 +671,8 @@ strong {
         radial-gradient(circle at 100% 0%, rgb(109, 133, 186) 0%, transparent 40%),
         radial-gradient(circle at 0% 100%, rgb(140, 170, 238) 0%, transparent 40%),
         radial-gradient(circle at 100% 100%, rgb(180, 200, 244) 0%, transparent 40%) !important;
-    background-repeat: no-repeat !important
+    background-repeat: no-repeat !important;
+    color: var(--tsv-button-font-color) !important
 }
 /*  ==========================================================================
    4. Ad Removal
