@@ -72,11 +72,23 @@ const BUTTON_RULES: readonly StaticRule[] = [
     ".tsv-button-filled, .tsv-button-gray, .tsv-tool-button.filled, .tsv-button.tsv-button-large, .tsv-tool-buttons",
     [["border-radius", "var(--tsv-border-radius) !important"]],
   ),
+  r(
+    ".tsv-button-filled, .tsv-button-filled-warning, .tsv-button-hero, .tsv-tool-button.filled.tinted",
+    [
+      ["color", "var(--tsv-button-font-color) !important"],
+      ["--tsv-icon-base", "var(--tsv-button-font-color) !important"],
+      ["--tsv-icon-tint", "var(--tsv-button-font-color) !important"],
+      ["--tsv-icon-tint2", "var(--tsv-button-font-color) !important"],
+    ],
+  ),
+  r(".tsv-tool-button.filled.tinted .tsv-item-text", [
+    ["color", "var(--tsv-button-font-color) !important"],
+  ]),
   r(".tsv-button.tsv-button-large:hover", [
     ["color", "var(--teamspeak-text-primary) !important"],
   ]),
   r(".tsv-button-filled:hover, .tsv-button-hero:hover", [
-    ["color", "var(--teamspeak-text-primary) !important"],
+    ["color", "var(--tsv-button-font-color) !important"],
     ["background", "var(--tsv-button-filled-hover-bg) !important"],
   ]),
   r(".tsv-button-plain:hover", [
@@ -518,6 +530,10 @@ const MISC_RULES: readonly StaticRule[] = [
         "background",
         "var(--tsv-button-filled-destructive-hover-bg, #B71C1C) !important",
       ],
+      ["color", "var(--teamspeak-text-primary) !important"],
+      ["--tsv-icon-base", "var(--teamspeak-text-primary) !important"],
+      ["--tsv-icon-tint", "var(--teamspeak-text-primary) !important"],
+      ["--tsv-icon-tint2", "var(--teamspeak-text-primary) !important"],
     ],
   ),
   r(".tsv-bar .tsv-item-content.tsv-item-content-primary", [
@@ -638,6 +654,7 @@ interface FlavorMapped {
   deletedFontColor: string;
   secondaryFontColor: string;
   contrastFontColor: string;
+  buttonText: string;
 }
 
 export function mapFlavor(flavor: Flavor, accent: AccentId): FlavorMapped {
@@ -675,6 +692,7 @@ export function mapFlavor(flavor: Flavor, accent: AccentId): FlavorMapped {
     deletedFontColor: base.red.hex,
     secondaryFontColor: base.text.hex,
     contrastFontColor: base.text.hex,
+    buttonText: base.base.hex,
   };
 }
 
@@ -800,6 +818,7 @@ function buildVarRule(f: Flavor, m: FlavorMapped, accent: AccentId): Rule {
       "var(--teamspeak-blue-hover) !important",
     ),
     decl("--tsv-font-color", "var(--teamspeak-text-primary) !important"),
+    decl("--tsv-button-font-color", m.buttonText + " !important"),
     decl(
       "--tsv-font-subtitle-color",
       "var(--teamspeak-text-secondary) !important",

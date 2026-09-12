@@ -65,6 +65,7 @@ Do not edit by hand. */
     --tsv-button-filled-bg: var(--teamspeak-blue) !important;
     --tsv-button-filled-hover-bg: var(--teamspeak-blue-hover) !important;
     --tsv-font-color: var(--teamspeak-text-primary) !important;
+    --tsv-button-font-color: #1e1e2e !important;
     --tsv-font-subtitle-color: var(--teamspeak-text-secondary) !important;
     --ts-third-font-color: var(--teamspeak-header-primary) !important;
     --ts-secondary-font-color: #cdd6f4 !important;
@@ -133,11 +134,20 @@ Do not edit by hand. */
 .tsv-button-filled, .tsv-button-gray, .tsv-tool-button.filled, .tsv-button.tsv-button-large, .tsv-tool-buttons {
     border-radius: var(--tsv-border-radius) !important
 }
+.tsv-button-filled, .tsv-button-filled-warning, .tsv-button-hero, .tsv-tool-button.filled.tinted {
+    color: var(--tsv-button-font-color) !important;
+    --tsv-icon-base: var(--tsv-button-font-color) !important;
+    --tsv-icon-tint: var(--tsv-button-font-color) !important;
+    --tsv-icon-tint2: var(--tsv-button-font-color) !important
+}
+.tsv-tool-button.filled.tinted .tsv-item-text {
+    color: var(--tsv-button-font-color) !important
+}
 .tsv-button.tsv-button-large:hover {
     color: var(--teamspeak-text-primary) !important
 }
 .tsv-button-filled:hover, .tsv-button-hero:hover {
-    color: var(--teamspeak-text-primary) !important;
+    color: var(--tsv-button-font-color) !important;
     background: var(--tsv-button-filled-hover-bg) !important
 }
 .tsv-button-plain:hover {
@@ -577,7 +587,11 @@ strong {
 }
 .tsv-button-filled.tsv-is-destructive:hover,
 .tsv-button-hero.tsv-is-destructive:hover {
-    background: var(--tsv-button-filled-destructive-hover-bg, #B71C1C) !important
+    background: var(--tsv-button-filled-destructive-hover-bg, #B71C1C) !important;
+    color: var(--teamspeak-text-primary) !important;
+    --tsv-icon-base: var(--teamspeak-text-primary) !important;
+    --tsv-icon-tint: var(--teamspeak-text-primary) !important;
+    --tsv-icon-tint2: var(--teamspeak-text-primary) !important
 }
 .tsv-bar .tsv-item-content.tsv-item-content-primary {
     display: grid !important;
