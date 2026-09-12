@@ -4,11 +4,11 @@ A [Catppuccin](https://catppuccin.com) port for TeamSpeak.
 
 ## Previews
 
-| Latte | Frappé |
-| ----- | ------ |
-| ![Latte](previews/latte.png) | ![Frappé](previews/frapp.png) |
-| **Macchiato** | **Mocha** |
-| ![Macchiato](previews/macchiato.png) | ![Mocha](previews/mocha.png) |
+| Latte                                | Frappé                        |
+| ------------------------------------ | ----------------------------- |
+| ![Latte](previews/latte.png)         | ![Frappé](previews/frapp.png) |
+| **Macchiato**                        | **Mocha**                     |
+| ![Macchiato](previews/macchiato.png) | ![Mocha](previews/mocha.png)  |
 
 ## Flavors
 
@@ -30,10 +30,14 @@ Accent variants: `rosewater`, `flamingo`, `pink`, `mauve`, `red`, `maroon`,
 
 1. Download the flavor folder of your choice from `themes/` (e.g.
    `io.catppuccin.teamspeak.mocha`).
-2. Place the folder into your TeamSpeak addon directory (e.g.
-   `~/.ts3client/addons/` on Linux, `%APPDATA%/TS3Client/plugins/` on Windows).
-3. Pick the theme (and accent) in the appearance settings. See the
-   [previews](#previews) above to choose the flavor you like.
+2. Place the folder into your TeamSpeak extensions directory:
+   - **Linux (native):** `~/.config/TeamSpeak/Default/extensions/`
+   - **Linux (Flatpak):** `~/.var/app/com.teamspeak.TeamSpeak/config/TeamSpeak/Default/extensions/`
+   - **Windows:** `%APPDATA%/TeamSpeak/Default/extensions/`
+   - **macOS:** `~/Library/Application Support/TeamSpeak/Default/extensions/`
+3. Restart TeamSpeak and clear the extension cache if themes don't appear:
+   - Delete the contents of `~/.cache/TeamSpeak/Default/` (or the equivalent on your platform)
+4. Enable **User Theme** in Settings → Appearance and pick your theme.
 
 ## Building
 
