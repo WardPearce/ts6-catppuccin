@@ -67,6 +67,8 @@ Do not edit by hand. */
     --tsv-font-color: var(--teamspeak-text-primary) !important;
     --tsv-font-subtitle-color: var(--teamspeak-text-secondary) !important;
     --ts-third-font-color: var(--teamspeak-header-primary) !important;
+    --ts-secondary-font-color: #cad3f5 !important;
+    --tsv-contrast-font-color: #cad3f5 !important;
     --tsv-separation-border: 1px solid var(--teamspeak-border-color) !important;
     --horizontal-separator-color: var(--teamspeak-border-color) !important;
     --card-outline: var(--teamspeak-blue) !important;

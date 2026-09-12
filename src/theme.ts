@@ -636,6 +636,8 @@ interface FlavorMapped {
   borderColor: string;
   contextMenuSelection: string;
   deletedFontColor: string;
+  secondaryFontColor: string;
+  contrastFontColor: string;
 }
 
 export function mapFlavor(flavor: Flavor, accent: AccentId): FlavorMapped {
@@ -671,6 +673,8 @@ export function mapFlavor(flavor: Flavor, accent: AccentId): FlavorMapped {
       ? "var(--teamspeak-dark-bg-modifier-selected)"
       : "rgba(0, 0, 0, 0.05)",
     deletedFontColor: base.red.hex,
+    secondaryFontColor: base.text.hex,
+    contrastFontColor: base.text.hex,
   };
 }
 
@@ -801,6 +805,8 @@ function buildVarRule(f: Flavor, m: FlavorMapped, accent: AccentId): Rule {
       "var(--teamspeak-text-secondary) !important",
     ),
     decl("--ts-third-font-color", "var(--teamspeak-header-primary) !important"),
+    decl("--ts-secondary-font-color", m.secondaryFontColor + " !important"),
+    decl("--tsv-contrast-font-color", m.contrastFontColor + " !important"),
     decl(
       "--tsv-separation-border",
       "1px solid var(--teamspeak-border-color) !important",
